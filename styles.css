@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-.container {
+@import "./sass/variables/_variables.scss";
+
+
+body {
+    margin: 0;
+    overflow: hidden ;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0
+}
+
+/* EMPTY STATE */
+.emptyState {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh
+    height: 100vh;
 }
 
 img {
@@ -17,4 +31,36 @@ h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+}
+
+/* END EMPTY STATE */
+
+li {
+    list-style: none;
+}
+
+.container {
+    background: red;
+    display: grid;
+    grid-template-columns:
+        [start] 7% [center] 86% [end] 7%;
+    justify-content: center;
+    height: 75vh;
+    margin: auto;
+    padding-top: 12.5vh;
+    width: 90%
+}
+
+#leftSide, #rightSide {
+    background: grey;
+}
+
+#leftSide {
+    border-radius: 20px 0 0 20px
+}
+
+#rightSide {
+    border-radius: 0 20px 20px 0;
+    grid-template-rows:
+        [back] 33% [home] 33%;
 }
