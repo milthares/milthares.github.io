@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0
+}
+
+header,
+main,
+footer {
+  background: red;
+  width: 1280px
+}
+
+@media screen and (min-width: 1921px) {
+
+  header,
+  main,
+  footer {
+    background: red;
+    width: 1920px
+  }
+}
+
+/* helper */
+.helper {
+  position: fixed;
+  bottom: 2em;
+  right: 2em
+}
