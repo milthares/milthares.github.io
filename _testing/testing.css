@@ -1,0 +1,85 @@
+/* sizes
+S - max 480px x1
+M - max 960px x2
+L - max 1920px x3
+XL  min 1921px x4 */
+
+@media screen and (max-width: 1920px) {
+  nav {
+    margin: 0 20rem
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    --bg: green;
+    --multi: 2
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    --bg: red;
+    --multi: 1
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0
+}
+
+header,
+footer {
+  background: #1e1e1e;
+  color: rgb(218, 218, 218);
+  height: 5rem
+}
+
+footer {
+  height: 10rem
+}
+
+ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  padding: 3rem 0
+}
+
+/* CARDs */
+.card {
+  cursor: pointer;
+  position: relative;
+  flex: 1;
+  border-radius: 1rem;
+  min-width: 20rem;
+  transition: all .3s
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all .3s
+}
+
+.blog {
+  background: red;
+  height: 10rem
+}
+
+.categories {
+  height: 5rem
+}
+
+h2 {
+  margin: 0
+}
+
+/*
+  finish card
+  tags need hover method where expands
+*/
